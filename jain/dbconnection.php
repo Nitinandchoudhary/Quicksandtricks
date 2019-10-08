@@ -16,7 +16,7 @@ if (!@mysqli_connect ($mysql_host, $mysql_user, $mysql_pass))
 else
 { 
 	// database name is server 
-	if (@mysqli_select_db('jain')) 
+	if (mysqli_select_db('jain')) 
 	{ 
 		echo "Connection Success"; 
 	} 
@@ -26,3 +26,4 @@ else
 	} 
 } 
 ?> 
+
